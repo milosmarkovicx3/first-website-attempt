@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kontakt_strana</title>
+    <link rel="icon" href="img/ikonica.ico">
+    <link rel="stylesheet" href="css/default.css">    
+    <link rel="stylesheet" href="css/sneg.css">
+    <link rel="stylesheet" href="css/ucitavanje_stranice.css">
+    <link rel="stylesheet" href="css/kontakt/css.css">
+    <script src="javascript/kontakt/js.js"></script>
+    <meta name="description" content="milosmarkovicx3"/>
+    <meta name="keywords" content="milosmarkovicx3"/>
+    <meta name="author" content="Marković Miloš, milosmarkovicx3@gmail.com" />
+    <meta name="copyright" content="Marković Miloš" />
+</head>
+<body id="body">
+    <div id="ucitavanje">
+        <div id="zavesa">
+            <p data-text="MILOSMARKOVICX3_PRESENTS ;)" id="ucitavanje_tekst">MILOSMARKOVICX3_PRESENTS ;)&nbsp;&nbsp;</p>
+        </div>
+    </div>
+    
+    <div id="dobrodosli" class="pozadina">       
+        <p id="prikazi_meni" onclick="prikaziMeni()">&#9776</p>
+        <nav id="nav" class="sakrij" onclick="navclick()">
+            <ul>
+                <li><a href="index.html"><img id="logo" src="img/logo3.png" alt=""></a></li>
+                <li><a href="index.html">početna</a></li>
+                <li><a href="biografija.html">biografija</a></li>
+                <li><a href="galerija.html">galerija</a></li>
+                <li><a href="hobi.html">hobiji</a></li>
+                <li class="active"><a href="kontakt.html">kontakt</a></li>
+                <li><a href="rezime.html">rezime</a></li>
+                <li><a href="projekti.html">projekti</a></li>
+            </ul>
+            <ul id="grupa_ikonica">
+                <li><a href="https://www.facebook.com/milosmarkovicx3/" target="_blank"><img class="ikonice" src="img/facebook1.png" alt="FB"></a></li>
+                <li><a href="https://www.twitter.com/milosmarkovicx3" target="_blank"><img class="ikonice" src="img/twitter.png" alt="TW"></a></li>
+                <li><a href="https://www.instagram.com/milosmarkovicx3/" target="_blank"><img class="ikonice" src="img/instagram.png" alt="IN"></a></li>
+            </ul>
+        </nav>
+        <div id="sneg" class="sneg"></div>
+        <div id="glavni_div">
+        <h1 id="naslov">Kontakt</h1>
+        <div id="gornji_deo">            
+            <div id="forma">                        
+            <form action="izlazna.html" name="mojaforma" method="POST" onsubmit="return provera()">
+                <label id="lime" for="ime">Ime:</label>                 <input name="ime" id="ime" type="text" placeholder="Unesite Vaše ime"><br>
+                <label id="lprezime" for="prezime">Prezime:</label>     <input name="prezime" id="prezime" type="text" placeholder="Unesite Vaše prezime" ><br>
+                <label id="lposiljalac" for="posiljalac">Email:</label> <input name="posiljalac" id="posiljalac" type="email" placeholder="Unesite Vašu email adresu"><br>
+                <label id="lnaslov" for="naslov">Naslov:</label>        <input name="naslov" id="naslov" type="text" placeholder="Unesite naslov Vaše poruke"><br>
+                <label id="lporuka" for="poruka">Poruka:</label>        <textarea name="poruka" id="poruka" placeholder="Unesite Vašu poruku"></textarea><br> 
+                <input type="submit" name="submit" id="submit" value="P O Š A L J I">
+                <input type="reset" name="reset" id="reset" value="R E S E T" onclick="vrati()">
+            </form>
+            </div>
+            <div id="discord">
+                <iframe src="https://discord.com/widget?id=544297719699734539&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+            </div>
+        </div>
+        <div id="google_mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2832.6132541470474!2d20.477827215534244!3d44.76830157909881!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475a70f8df8b60e1%3A0xd12e2aad5590e385!2sThe%20School%20of%20Electrical%20and%20Computer%20Engineering%20of%20Applied%20Studies!5e0!3m2!1sen!2srs!4v1613428786861!5m2!1sen!2srs" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+        </div>
+        <h1 id="podaci">adresa: vojvodjanska 181, novi banovci, broj telefona: 062/18-17-855</h1>
+    </div>
+    </div>
+    <footer class="pozadina">
+        <ul>
+            <li><a href="index.html">početna</a></li>
+            <li><a href="biografija.html">biografija</a></li>
+            <li><a href="galerija.html">galerija</a></li>
+            <li><a href="hobi.html">hobiji</a></li>    
+            <li><a href="kontakt.html">kontakt</a></li>        
+        </ul>       
+            <p>&copy;2021 milosmarkovicx3, Vojvodjanska 181, Novi Banovci, 
+                <a href="mailto:milosmarkovicx3@gmail.com" target="_blank">milosmarkovicx3@gmail.com</a> 
+                <a href="tel:+62-1817-855" target="_blank">062/18-17-855</a>
+            </p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,75 @@
+/* JOS JEDNA IDEJA DA SE URADI BR PA JOS I TAGOVA I ONDA SA DECOM DA SE REGULISE BRZINA */
+
+/* PRIKAZIVANJE */
+.sneg {width: 100%; height: 115vh;position: fixed; top: -100px; left: 0;overflow: hidden;}
+
+i, i:after, i:before { background: white; }
+i {display: inline-block;animation: sneg 3s linear 2s 20; position: relative;}
+/* IZGLED PAHULJICE 1+2 PRAVOUGAONIKA ROTIRANA */
+i:after, i:before {height: 100%; width: 100%;content: "."; position: absolute; top: 0px; left: 0px; transform: rotate(120deg);}
+i:before { transform: rotate(240deg); }
+
+@keyframes sneg {
+    0% {transform: translate3d(0,0,0) rotate(0deg) scale(0.6);}
+    100% {transform: translate3d(15px, 120vh, 0px) rotate(360deg) scale(0.6);};
+}
+
+/* TRI VELICINE PAHULJICA */
+.sneg i:nth-child(3n) {
+    width: 16px; height: 4px;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    transform-origin: right -45px;
+}
+
+/* KRECE OD 1 +3 */
+.sneg i:nth-child(3n+1) {
+    width: 24px; height: 6px;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
+    transform-origin: right -30px;
+}
+/* KRECE OD 2 +3 */
+.sneg i:nth-child(3n+2) {
+    width: 32px; height: 8px;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    transform-origin: right -15px;
+}
+    
+/* RAZLICITA VREMENA DA NE BI SVI KRENULI U ISTO VREME */
+.sneg i:nth-child(7n) {
+    opacity:.3;
+    animation-delay: 0s;
+    animation-timing-function:ease-in;
+}
+.sneg i:nth-child(7n+1) {
+    opacity:.4;
+    animation-delay: 1s;
+    animation-timing-function:ease-out;
+}
+.sneg i:nth-child(7n+2) {
+    opacity:.5;
+    animation-delay: 1.5s;
+    animation-timing-function:linear;
+}
+.sneg i:nth-child(7n+3) {
+    opacity:.6;
+    animation-delay: 2s;
+    animation-timing-function:ease-in;
+}
+.sneg i:nth-child(7n+4) {
+    opacity:.7;
+    animation-delay: 2.5s;
+    animation-timing-function:linear;
+}
+.sneg i:nth-child(7n+5) {
+    opacity:.8;
+    animation-delay: 3s;
+    animation-timing-function:ease-out;
+}
+.sneg i:nth-child(7n+6) {
+    opacity:.9;
+    animation-delay: 3.5s;
+    animation-timing-function:ease-in;
+}

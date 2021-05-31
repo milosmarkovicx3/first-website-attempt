@@ -1,0 +1,83 @@
+*{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;transition: width 1s, height 1s;color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+*{user-select: none; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;}
+body{background-image: url('../../img/tekstura.jpg'); opacity: 0.97; background-size: 50px;}
+#ucitavanje{width:100%;height: 100vh; min-height: 900px; background-color:black; position: absolute;z-index: 2;opacity: 1;transition: opacity 1s;}
+#prikazi_meni{font-size: 2rem; text-align: center;  padding: 8px; display: none; border-bottom: 1px solid #343a40; background-color: rgba(111,111,111,0.2); position: relative; z-index: 5;}
+nav{border-bottom: 1px solid #343a40; position: relative; z-index: 5; display: flex; justify-content: space-between;}
+nav ul, footer ul{display: inline-flex; list-style: none; padding-left: 40px;}
+nav li, footer li{display: inline-flex; letter-spacing: 0.2rem; text-transform: uppercase; padding: 1rem; font-size: 15px;}
+a{text-decoration: none;}
+#logo{width: 200px;}
+.ikonice{width: 25px;}
+#grupa_ikonica{padding: 0 40px 0 0;}
+#grupa_ikonica li{padding: 11px 10px 10px 10px;}
+li:hover,#prikazi_meni:hover{background-color: rgba(111,111,111,0.3);}
+.active{background-color: rgba(111,111,111,0.2);}
+@media screen and (max-width:1240px){nav li{padding: 16px 8px;}}
+@media screen and (max-width:1120px){nav ul, #grupa_ikonica{padding: 0;}}
+@media screen and (max-width:1040px){    
+    .sakrij{display: none;}
+    nav:not(active){animation: tranzicijaMeni 1s;}
+    #prikazi_meni{display: block;}
+    nav{flex-direction: column; justify-content: center; transition: all 1s; height: 100vh; min-height: 900px; align-content: flex-start; padding-bottom: 100px;}
+    nav ul{display: flex; flex-direction: column;}
+    nav li{justify-content: center;}
+    #grupa_ikonica{display: flex; justify-content: center; flex-direction: row;}
+}
+.pozadina{background-image: url('../../img/pozadina.jpg'); background-size: cover; background-attachment: fixed; background-position: 50% 0%; position: relative;}
+.consolas{font-family: Consolas, Helvetica, Arial, sans-serif;}
+#dobrodosli{min-height: 100vh;}
+ h1{letter-spacing: 0.2rem;text-transform: uppercase;}
+ #glavni_div{display: none;}
+ input, textarea{color: black;}
+ form label{display: inline-block; text-transform: uppercase; background-color: rgba(111,111,111,0.3); width: 50%; font-size: 2.5rem; border: 1px solid #343a40; letter-spacing: 0.2rem;}
+ #gornji_deo, #google_mapa, #naslov{width: 80%; margin-left: auto; margin-right: auto; display: flex; position: relative; z-index: 1;} 
+ #google_mapa iframe {width: 100%; height: 30vh; min-height: 250px;}
+ #google_mapa{border: 1px solid #343a40;}
+ #forma{width: 70%;}
+ #discord{width: 30%;}
+ #discord iframe{width: 100%; height: 400px; border: 1px solid red; border-radius: 7.5px; position: relative; top: 50%; transform: translate(0, -50%);}
+ #gornji_deo label, #gornji_deo input{width: 47.5%; height: 3rem; display: inline-block; margin: 1%; margin-left: 0;}
+ #submit, #reset{margin: 0; height: 2.5rem; opacity: 0.9; outline: none;}
+ #submit{margin-right: 1%;}
+ #submit:hover{color: green; opacity: 1; border: 1px solid green; border-radius: 2.5px;}
+ #reset:hover{color: red;  opacity: 1; border: 1px solid red; border-radius: 2.5px;}
+ #gornji_deo{margin-bottom: 22px;}
+ input[type], textarea{vertical-align: top; font-size: 1.25rem; font-weight: 300; text-shadow: none;}
+ textarea{width: 47.5%; height: 4.5rem; transition: none; padding-top: 10px; }
+ #podaci{text-align: center;color: rgb(69, 69, 69); padding: 22px; margin: 0;}
+ .greska_poruka{color: red;text-transform: lowercase;font-size: 1.25rem;}
+ @media screen and (max-width:1550px){
+     #forma label, #forma input, #forma textarea{width:49%;}
+     #gornji_deo{flex-direction: column;}
+     #forma{width: 100%;}
+     #discord{width: 100%;}
+     #discord iframe{position: static; transform: none; height: 30vh; min-height: 250px;}    
+     #forma{margin-bottom: 12px;}
+     #forma input:not(input[type='submit']){margin-right: 0!important;}
+ }
+ @media screen and (max-width:1090px){
+     #forma label, #forma input, #forma textarea{width: 100%;}
+     #submit, #reset{width: 49.5%!important;}
+     #submit{margin-right: 0!important;}
+     #naslov{display: flex; justify-content: center;}
+}
+ @media screen and (max-width:570px){#submit, #reset{width: 49%!important;}}
+ @media screen and (max-width:530px){#forma label{font-size: 2rem; letter-spacing: 0; display: flex; align-items: center;}}
+ @media screen and (max-width:390px){#forma label{font-size: 1.5rem;}}
+footer{border-top: 1px solid #343a40; padding: 1.5rem; text-decoration: none; position: relative; z-index: 5; text-align: center;}
+footer ul{padding: 0;}
+footer li{padding: 12px;}
+footer p{letter-spacing: 0.1rem;text-transform: uppercase; padding: 12px 0;}
+@media screen and (max-width: 680px) {footer ul, footer li{display: block; width: 100%;}}
+
+
+
+
+
+ 
+
+@keyframes tranzicijaMeni{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}

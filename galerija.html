@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>galerija_slika</title>
+    <link rel="icon" href="img/ikonica.ico">
+    <link rel="stylesheet" href="css/default.css">
+    <link rel="stylesheet" href="css/galerija/css.css">
+    <link rel="stylesheet" href="css/sneg.css">
+    <link rel="stylesheet" href="css/ucitavanje_stranice.css">
+    <script src="javascript/galerija/js.js"></script>
+    <meta name="description" content="milosmarkovicx3"/>
+    <meta name="keywords" content="milosmarkovicx3"/>
+    <meta name="author" content="Marković Miloš, milosmarkovicx3@gmail.com" />
+    <meta name="copyright" content="Marković Miloš" />
+</head>
+<body id="body">
+    <div id="ucitavanje">
+        <div id="zavesa">
+            <p data-text="MILOSMARKOVICX3_PRESENTS ;)" id="ucitavanje_tekst">MILOSMARKOVICX3_PRESENTS ;)&nbsp;&nbsp;</p>
+        </div>
+    </div>
+    <div id="dobrodosli" class="pozadina">
+        <div id="sneg" class="sneg"></div>
+        <p id="prikazi_meni" onclick="prikaziMeni()">&#9776</p>
+        <nav id="nav" class="sakrij" onclick="navclick()">
+            <ul>
+                <li><a href="index.html"><img id="logo" src="img/logo3.png" alt=""></a></li>
+                <li><a href="index.html">početna</a></li>
+                <li><a href="biografija.html">biografija</a></li>
+                <li class="active"><a href="galerija.html">galerija</a></li>
+                <li><a href="hobi.html">hobiji</a></li>
+                <li><a href="kontakt.html">kontakt</a></li>
+                <li><a href="rezime.html">rezime</a></li>
+                <li><a href="projekti.html">projekti</a></li>
+            </ul>
+            <ul id="grupa_ikonica">
+                <li><a href="https://www.facebook.com/milosmarkovicx3/" target="_blank"><img class="ikonice" src="img/facebook1.png" alt="FB"></a></li>
+                <li><a href="https://www.twitter.com/milosmarkovicx3" target="_blank"><img class="ikonice" src="img/twitter.png" alt="TW"></a></li>
+                <li><a href="https://www.instagram.com/milosmarkovicx3/" target="_blank"><img class="ikonice" src="img/instagram.png" alt="IN"></a></li>
+            </ul>
+        </nav>
+        <div id="oba_slidera">
+        <div id="galerija" onmouseover="radnoVreme(true)" onmouseout="radnoVreme(false)">        
+            <div id="pod_galerija">
+                <img src="img/slider0.jpg" alt="" id="slider">
+            </div>
+            <div id="buttons">
+                <p onclick="galerija('prev')" id="prev">&#x2039;</p>
+                <p onclick="galerija('next')" id="next">&#x203a;</p>
+            </div>
+            <div id="tacke">
+            <label for="" id="slider0.jpg" onclick="labelClick('slider0.jpg','0')"></label>
+            <label for="" id="slider1.jpg" onclick="labelClick('slider1.jpg','1')"></label>
+            <label for="" id="slider2.jpg" onclick="labelClick('slider2.jpg','2')"></label>
+            <label for="" id="slider3.jpg" onclick="labelClick('slider3.jpg','3')"></label>
+            <label for="" id="slider4.jpg" onclick="labelClick('slider4.jpg','4')"></label>
+            <label for="" id="slider5.jpg" onclick="labelClick('slider5.jpg','5')"></label>
+            <label for="" id="slider6.jpg" onclick="labelClick('slider6.jpg','6')"></label>
+            <label for="" id="slider7.jpeg" onclick="labelClick('slider7.jpeg','7')"></label>
+            <label for="" id="slider8.jpg" onclick="labelClick('slider8.jpg','8')"></label>
+            </div>
+        </div>
+            <div id="pod_slider">
+                <div class="slika_kontejner" onclick="ceoekran('slider0')">
+                    <img id="slider0" src="img/slider0.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Igre Prestola</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider1')">
+                    <img id="slider1" src="img/slider1.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Muzika 24/7</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider2')">
+                    <img id="slider2" src="img/slider2.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Svež Vazduh</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider3')">
+                    <img id="slider3" src="img/slider3.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Kancelarija</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider4')">
+                    <img id="slider4" src="img/slider4.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Šetnjica</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider5')">
+                    <img id="slider5" src="img/slider5.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Fakultet</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider6')">
+                    <img id="slider6" src="img/slider6.jpg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Frizurica</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+                <div class="slika_kontejner" onclick="ceoekran('slider7')">
+                    <img id="slider7" src="img/slider7.jpeg" alt="" class="slika">
+                    <div class="slika_tekst">
+                        <div class="slika_naslov">Don't Ask</div>
+                            <p class="slika_opis"> kliknite za fullscreen</p>
+                    </div>
+                </div>
+            </div>   
+        </div>                     
+    </div>
+    
+    <footer class="pozadina">
+        <ul>
+            <li><a href="index.html">početna</a></li>
+            <li><a href="biografija.html">biografija</a></li>
+            <li><a href="galerija.html">galerija</a></li>
+            <li><a href="hobi.html">hobiji</a></li>    
+            <li><a href="kontakt.html">kontakt</a></li>        
+        </ul>       
+            <p>&copy;2021 milosmarkovicx3, Vojvodjanska 181, Novi Banovci, 
+                <a href="mailto:milosmarkovicx3@gmail.com" target="_blank">milosmarkovicx3@gmail.com</a> 
+                <a href="tel:+62-1817-855" target="_blank">062/18-17-855</a>
+            </p>
+    </footer>
+</body>
+</html>

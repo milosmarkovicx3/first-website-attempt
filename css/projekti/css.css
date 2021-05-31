@@ -1,0 +1,72 @@
+*{font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;transition: width 1s, height 1s;color: white; text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;}
+*{user-select: none; -ms-user-select: none; -moz-user-select: none; -webkit-user-select: none; -webkit-touch-callout: none;}
+body{background-image: url('../../img/tekstura.jpg'); opacity: 0.97; background-size: 50px;}
+#ucitavanje{width:100%;height: 100vh; min-height: 900px; background-color:black; position: absolute;z-index: 1;opacity: 1;transition: opacity 1s;}
+#prikazi_meni{font-size: 2rem; text-align: center;  padding: 8px; display: none; border-bottom: 1px solid #343a40; background-color: rgba(111,111,111,0.2); position: relative; z-index: 5;}
+nav{border-bottom: 1px solid #343a40; position: relative; z-index: 5; display: flex; justify-content: space-between;}
+nav ul, footer ul{display: inline-flex; list-style: none; padding-left: 40px;}
+nav li, footer li{display: inline-flex; letter-spacing: 0.2rem; text-transform: uppercase; padding: 1rem; font-size: 15px;}
+#logo{width: 200px;}
+.ikonice{width: 25px;}
+#grupa_ikonica{padding: 0 40px 0 0;}
+#grupa_ikonica li{padding: 11px 10px 10px 10px;}
+li:hover,#prikazi_meni:hover{background-color: rgba(111,111,111,0.3);}
+.active{background-color: rgba(111,111,111,0.2);}
+@media screen and (max-width:1240px){nav li{padding: 16px 8px;}}
+@media screen and (max-width:1120px){nav ul, #grupa_ikonica{padding: 0;}}
+@media screen and (max-width:1040px){    
+    .sakrij{display: none;}
+    nav:not(active){animation: tranzicijaMeni 1s;}
+    #prikazi_meni{display: block;}
+    nav{flex-direction: column; justify-content: center; transition: all 1s; height: 100vh; min-height: 900px; align-content: flex-start; padding-bottom: 100px;}
+    nav ul{display: flex; flex-direction: column;}
+    nav li{justify-content: center;}
+    #grupa_ikonica{display: flex; justify-content: center; flex-direction: row;}
+}
+.pozadina{background-image: url('../../img/pozadina.jpg'); background-size: cover; background-attachment: fixed; background-position: 50% 0%; position: relative;}
+.consolas{font-family: Consolas, Helvetica, Arial, sans-serif;}
+#dobrodosli{min-height: 100vh; padding-bottom: 50px;}
+ h1{letter-spacing: 0.2rem;text-transform: uppercase;}
+ .span_naslov{letter-spacing: 0.2rem;text-transform: uppercase; font-size: 1.5em;border: 1px solid red;}
+ #glavni_div{width: 80%;margin: 0 auto; height: auto; display: none; }
+ #biografija{display: flex; flex-wrap: wrap; justify-content: space-evenly; font-size: 1.5em; background-color: rgba(111,111,111,0.3); border: 1px solid #343a40; position: relative; z-index: 1;}
+ #biografija img{width: 32.5%; height: 30%; border: 1px solid red;}
+ #biografija *{margin: 2.5%;}
+ a{text-decoration: none; margin: 0!important;}
+ #biografija p{width: 57.5%; height: 15vw; padding: 16px; text-align: center; overflow-wrap: break-word;}
+ #poglavlje1{margin-left: 0;}
+ #poglavlje2{margin-right: 0;}
+ @media screen and (max-width:1500px){
+    h1{text-align: center;}
+    #biografija{padding: 15px 0;}
+    #biografija img{width: 50%}
+    #biografija p{width: 100%; height: 330px}
+    #biografija *{margin: 2.5%;}
+    #biografija :nth-child(1) { order: 1; }
+    #biografija :nth-child(2) { order: 2; }
+    #biografija :nth-child(3) { order: 4; }
+    #biografija :nth-child(4) { order: 3; }
+    #biografija :nth-child(5) { order: 5; }
+    #biografija :nth-child(6) { order: 6; }
+ }
+ @media screen and (max-width:575px){
+    #glavni_div{width: 90%}
+    .span_naslov{letter-spacing: 0; font-size: 1.25em}
+    #biografija p{height: 430px;}
+ }
+footer{border-top: 1px solid #343a40; padding: 1.5rem; text-decoration: none; position: relative; z-index: 5; text-align: center;}
+footer ul{padding: 0;}
+footer li{padding: 12px;}
+footer p{letter-spacing: 0.1rem;text-transform: uppercase; padding: 12px 0;}
+@media screen and (max-width: 680px) {footer ul, footer li{display: block; width: 100%;}}
+
+
+
+
+
+ 
+
+@keyframes tranzicijaMeni{
+    from{opacity: 0;}
+    to{opacity: 1;}
+}
